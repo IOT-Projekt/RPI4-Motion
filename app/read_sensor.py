@@ -1,5 +1,7 @@
 from gpiozero import MotionSensor
-import time
+from datetime import datetime
+
+
 
 # Set up the motion sensor
 pir = MotionSensor(23)
@@ -7,5 +9,10 @@ pir = MotionSensor(23)
 def detect_motion():
     # Pauses Script until motion is detected
     pir.wait_for_motion()
-    return time.localtime()  # Return the timestamp of when motion is detected
+   # current date and time
+    now = datetime.now()
 
+    # convert from datetime to timestamp
+    ts = datetime.timestamp(now)
+    
+    return ts
