@@ -6,6 +6,7 @@ WORKDIR /app
 
 # Kopiere Dateien in das Image
 COPY app/ /app/
+COPY requirements.txt /app/
 
 # Installiere Abhängigkeiten
 RUN pip install --no-cache-dir -r requirements.txt
