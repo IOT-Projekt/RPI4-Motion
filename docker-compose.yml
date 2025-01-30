@@ -5,6 +5,7 @@ services:
     restart: always
     privileged: true  # Benötigt für GPIO-Zugriff auf Raspberry Pi
     environment:
+      - TZ=Europe/Berlin
       - BROKER_IP=${BROKER_IP}
       - BROKER_PORT=${BROKER_PORT}
       - TOPIC_MOTION=${TOPIC_MOTION}
