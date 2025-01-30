@@ -63,7 +63,7 @@ def send_mqtt(data):
         {
             "source": "mqtt",
             "device_id": CLIENT_ID,
-            "motion": "True",
+            "motion_detected": True,
             "timestamp": data,
         }
     )
