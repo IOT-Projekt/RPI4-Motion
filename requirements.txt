@@ -1,2 +1,5 @@
 paho-mqtt==1.6.1
 gpiozero
+RPi.GPIO
+pigpio
+lgpio
