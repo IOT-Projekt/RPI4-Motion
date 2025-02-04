@@ -11,6 +11,7 @@ services:
       - TOPIC_MOTION=${TOPIC_MOTION}
       - MQTT_USERNAME=${MQTT_USERNAME}
       - MQTT_PASSWORD=${MQTT_PASSWORD}
+      - GPIO_PIN=${GPIO_PIN}
       - CLIENT_ID=${CLIENT_ID}
     devices:
       - "/dev/:/dev/"  # Zugriff auf GPIO
